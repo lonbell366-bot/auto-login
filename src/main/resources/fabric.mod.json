@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "myauth",
+  "version": "${version}",
+  "name": "AutoLogin 1.21.4",
+  "description": "Mod quản lý Token, Proxy và tiện ích cho Minecraft 1.21.4",
+  "authors": [
+    "lonbell366"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.myauth.MyAuthClient"
+    ]
+  },
+  "mixins": [
+    "myauth.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
